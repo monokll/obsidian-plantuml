@@ -1,12 +1,10 @@
 {
-  "id": "obsidian-plantuml-lite",
+  "id": "plantuml-lite",
   "name": "PlantUML Lite",
   "version": "0.0.2",
   "minAppVersion": "0.15.0",
-  "description": "Zero-config PlantUML support — renders diagrams instantly and exports to SVG",
+  "description": "Zero-config PlantUML support — renders diagrams instantly and exports to SVG.",
   "author": "Monokll Labs",
   "authorUrl": "https://yakovlev.io",
-  "fundingUrl": "https://yakovlev.io/sponsor",
-  "isDesktopOnly": false,
-  "repo": "https://github.com/monokll/obsidian-plantuml-lite"
+  "fundingUrl": "https://yakovlev.io/sponsor"
 }
