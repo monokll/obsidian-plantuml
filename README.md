@@ -1,11 +1,14 @@
-# PlantUML plugin for Obsidian.md
+# PlantUML Lite — Obsidian.md plugin
 
-This plugin renders `plantuml` code blocks in Markdown files within [Obsidian.md](https://obsidian.md/) using the [PlantUML JavaScript rendering engine](https://plantuml.github.io/plantuml/js-plantuml/index.html).
+A lightweight, zero-config PlantUML plugin for [Obsidian.md](https://obsidian.md/).
+
+Renders `plantuml` code blocks instantly using the official [PlantUML JavaScript engine](https://plantuml.github.io/plantuml/js-plantuml/index.html) — no Java, no server, no setup required.
 
 ## Features
 
-- [x] Render PlantUML diagrams directly in your notes
-- [x] Export diagrams as SVG
+- [x] Zero configuration
+- [x] Renders PlantUML diagrams directly in your notes
+- [x] Export diagrams to SVG
 
 ## Example
 

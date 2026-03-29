@@ -4,7 +4,7 @@
 all: filewatch
 
 # Build directory of Obsidian plugin
-DIST_DIR = ~/Documents/code/obsidian-plantuml/dist
+DIST_DIR = ~/Documents/code/obsidian-plantuml-lite/dist
 
 PLUGIN_NAME := $(shell jq -r '.id' manifest.json)
 PLUGIN_DIR := ~/Documents/workflow/.obsidian/plugins/$(PLUGIN_NAME)
