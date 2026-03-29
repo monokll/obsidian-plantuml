@@ -1,0 +1,12 @@
+{
+  "id": "obsidian-plantuml",
+  "name": "PlantUML Support for Obsidian.md",
+  "version": "0.0.1",
+  "minAppVersion": "0.15.0",
+  "description": "Renders `plantuml` code blocks using the PlantUML JavaScript rendering engine ✨",
+  "author": "Monokll Labs",
+  "authorUrl": "https://yakovlev.io",
+  "fundingUrl": "https://yakovlev.io/sponsor",
+  "isDesktopOnly": false,
+  "repo": "https://github.com/monokll/obsidian-plantuml"
+}

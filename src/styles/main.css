@@ -1,0 +1,34 @@
+.plantuml-container {
+  background-color: rgba(255, 255, 255, 0.02);
+  position: relative;
+  padding: 16px;
+}
+
+.plantuml-content {
+  background-color: rgb(238, 238, 238);
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Reset problematic styles on text elements inside PlantUML diagrams */
+.plantuml-content svg text {
+  font-size: 14px !important; /* Slightly smaller text if needed */
+  font-family: sans-serif;
+
+  /* Allow wrapping (better than pre) */
+  /* white-space: normal !important;      */
+  /* Break long words */
+  /* overflow-wrap: break-word !important;  */
+  /* Aggressive break for very long identifiers */
+  /* word-break: break-all !important;    */
+  /* dominant-baseline: middle !important; */
+  /* text-anchor: start !important; */
+}
+
+.plantuml-export-svg {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
