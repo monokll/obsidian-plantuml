@@ -6,5 +6,6 @@
   "description": "Zero-config PlantUML support — renders diagrams instantly and exports to SVG.",
   "author": "Monokll Labs",
   "authorUrl": "https://yakovlev.io",
-  "fundingUrl": "https://yakovlev.io/sponsor"
+  "fundingUrl": "https://yakovlev.io/sponsor",
+  "isDesktopOnly": false
 }
