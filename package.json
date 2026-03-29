@@ -1,6 +1,7 @@
 {
   "name": "obsidian-plantuml",
   "module": "src/main.ts",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "bun build.ts --dev",
