@@ -1,7 +1,7 @@
 {
   "id": "plantuml-lite",
   "name": "PlantUML Lite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "minAppVersion": "0.15.0",
   "description": "Zero-config PlantUML support — renders diagrams instantly and exports to SVG.",
   "author": "Monokll Labs",
