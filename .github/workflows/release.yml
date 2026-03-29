@@ -1,0 +1,52 @@
+name: Release Obsidian Plugin
+
+on:
+  push:
+    tags:
+      - '*' # Trigger on any tag (you'll use tags like 1.0.0, not v1.0.0)
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        # with:
+        #   bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build plugin
+        run: bun run build
+        # Assumes your build outputs main.js (and optionally styles.css) to ./dist or root
+
+      - name: Prepare release files
+        run: |
+          # Copy required files to root (or wherever your build puts them)
+          cp dist/main.js ./main.js
+          cp dist/manifest.json ./manifest.json || true   # if manifest is already in root
+          cp dist/styles.css ./styles.css || true        # optional
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }} # Must match manifest version exactly (no 'v')
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          files: |
+            main.js
+            manifest.json
+            styles.css
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
